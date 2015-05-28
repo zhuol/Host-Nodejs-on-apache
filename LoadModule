@@ -1,0 +1,16 @@
+LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_balancer_module modules/mod_proxy_balancer.so
+LoadModule proxy_http_module modules/mod_proxy_http.so
+# Uncomment these to proxy FTP or HTTPS
+#LoadModule proxy_ftp_module modules/mod_proxy_ftp.so
+#LoadModule proxy_connect_module modules/mod_proxy_connect.so
+
+a2enmod proxy
+a2enmod proxy_http
+a2enmod proxy_ajp
+a2enmod rewrite
+a2enmod deflate
+a2enmod headers
+a2enmod proxy_balancer
+a2enmod proxy_connect
+a2enmod proxy_html
