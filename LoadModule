@@ -14,3 +14,23 @@ a2enmod headers
 a2enmod proxy_balancer
 a2enmod proxy_connect
 a2enmod proxy_html
+
+mod_proxy: The main proxy module for Apache that manages connections and redirects them.
+
+modproxyhttp: This module implements the proxy features for HTTP and HTTPS protocols.
+
+modproxyftp: This module does the same but for FTP protocol.
+
+modproxyconnect: This one is used for SSL tunnelling.
+
+modproxyajp: Used for working with the AJP protocol.
+
+modproxywstunnel: Used for working with web-sockets (i.e. WS and WSS).
+
+modproxybalancer: Used for clustering and load-balancing.
+
+mod_cache: Used for caching.
+
+mod_headers: Used for managing HTTP headers.
+
+mod_deflate: Used for compression.
